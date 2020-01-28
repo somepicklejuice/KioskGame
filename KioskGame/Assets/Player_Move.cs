@@ -18,6 +18,10 @@ public class Player_Move : MonoBehaviour
     void Update()
     {
         MovePlayer();
+        if (Input.GetButton("btnJump"))
+            {
+            Jump();
+        }
     }
 
     void MovePlayer()
@@ -41,6 +45,7 @@ public class Player_Move : MonoBehaviour
     void Jump()
 	{
         //Jumping code
+        GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPower);
 	}
     void FlipPlayer()
 	{

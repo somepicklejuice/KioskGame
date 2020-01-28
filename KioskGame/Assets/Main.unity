@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 1329815693}
   - component: {fileID: 1329815692}
   m_Layer: 0
-  m_Name: flatLight23
+  m_Name: btnRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1338,7 +1338,7 @@ GameObject:
   - component: {fileID: 1925686446}
   - component: {fileID: 1925686445}
   m_Layer: 0
-  m_Name: flatLight24
+  m_Name: btnJump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1422,7 +1422,7 @@ GameObject:
   - component: {fileID: 2035425238}
   m_Layer: 0
   m_Name: alienPink_stand
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1531,7 +1531,7 @@ MonoBehaviour:
   playerSpeed: 10
   facingRight: 1
   playerJumpPower: 100
-  moveX: 0
+  moveX: 10
 --- !u!50 &2035425242
 Rigidbody2D:
   serializedVersion: 4
@@ -1707,7 +1707,7 @@ GameObject:
   - component: {fileID: 2141226953}
   - component: {fileID: 2141226952}
   m_Layer: 0
-  m_Name: flatLight22
+  m_Name: btnLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
