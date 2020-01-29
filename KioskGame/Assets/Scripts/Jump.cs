@@ -5,6 +5,7 @@ using UnityEngine;
 public class Jump : MonoBehaviour
 {
     public playerController player;
+    public bool jumping;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,14 +15,23 @@ public class Jump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (jumping)
+        {
+            player.jump();
+            
+        }
+        jumping = false;
+        player.jumping = false;
     }
 
     public void makePlayerJump()
     {
         //    player = FindObjectOfType<playerController> ();
-        player.jump();
-
-
+        jumping = true;
+    }
+    public void StopJumping()
+    {
+        jumping = false;
+        player.jumping = false;
     }
 }
