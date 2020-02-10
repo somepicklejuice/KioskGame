@@ -3,7 +3,9 @@ guid: a86a2a67729f94badbb8955afa10d39a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - jumpingSprite: {fileID: 21300000, guid: 2f35cb565bacc4ada8deceeb754fc217, type: 3}
+  - standingSprite: {fileID: 21300000, guid: 756805d2eb85348e083bb8e6fa47223c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -28,5 +28,6 @@ public class Move_Right : MonoBehaviour
     public void StopMovement()
     {
         moveRight = false;
+        player.walking = false;
     }
 }

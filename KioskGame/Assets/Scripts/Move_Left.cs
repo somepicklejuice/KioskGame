@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Move_Left : MonoBehaviour
 {
@@ -29,5 +26,6 @@ public class Move_Left : MonoBehaviour
     public void StopMovement()
     {
         moveLeft = false;
+        player.walking = false;
     }
 }

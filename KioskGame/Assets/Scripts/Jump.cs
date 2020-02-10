@@ -18,15 +18,11 @@ public class Jump : MonoBehaviour
         if (jumping)
         {
             player.jump();
-            
         }
-        jumping = false;
-        player.jumping = false;
     }
 
     public void makePlayerJump()
     {
-        //    player = FindObjectOfType<playerController> ();
         jumping = true;
     }
     public void StopJumping()
