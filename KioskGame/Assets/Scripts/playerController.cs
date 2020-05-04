@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Experimental.XR;
+using UnityEngine.SceneManagement;
 
 public class playerController : MonoBehaviour
 {
@@ -16,12 +17,15 @@ public class playerController : MonoBehaviour
     public Sprite standingSprite;
 
     Animator myAnimation;
+
+    Vector2 InitialPos;
     // Use this for initialization
     void Start()
     {
         myAnimation = GetComponent<Animator>();
         myAnimation.enabled = false;
         rig = GetComponent<Rigidbody2D>();
+        InitialPos = rig.transform.position;
     }
 
     public void jump()
@@ -80,5 +84,13 @@ public class playerController : MonoBehaviour
             myAnimation.enabled = true;
         else
             myAnimation.enabled = false;
+    }
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.gameObject.tag == "Enemy" || col.gameObject.tag == "Death")
+        {
+            rig.transform.position = InitialPos;
+            //SceneManager.LoadScene("StartScreen");
+        }
     }
 }

@@ -8,7 +8,7 @@ public class enemyMovement : MonoBehaviour
 
       IEnumerator Start()
       {
-          var pointA = transform.position;
+        var pointA = transform.position;
           while(true)
           {
               yield return StartCoroutine(MoveObject(transform, pointA, pointB, 3.0f));
@@ -28,4 +28,16 @@ public class enemyMovement : MonoBehaviour
               yield return null;
           }
       }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Player")
+        {
+            if(col.GetComponent<Rigidbody2D>().velocity.y <= 0f)
+            {
+                col.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 7f);
+                Destroy(gameObject);
+            }
+        }
+    }
 }

@@ -1254,7 +1254,7 @@ GameObject:
   - component: {fileID: 60996076}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6250,7 +6250,7 @@ GameObject:
   - component: {fileID: 259062226}
   m_Layer: 0
   m_Name: spikes (4)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11667,7 +11667,7 @@ GameObject:
   - component: {fileID: 580850378}
   m_Layer: 0
   m_Name: dirtCaveSpikeBottom (1)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18119,7 +18119,7 @@ GameObject:
   - component: {fileID: 861882843}
   m_Layer: 0
   m_Name: dirtCaveBL (2)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19413,7 +19413,7 @@ GameObject:
   - component: {fileID: 927890995}
   m_Layer: 0
   m_Name: dirtCaveBR (2)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23028,7 +23028,7 @@ GameObject:
   - component: {fileID: 1168417920}
   m_Layer: 0
   m_Name: spikes (5)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23460,9 +23460,10 @@ GameObject:
   - component: {fileID: 1178085473}
   - component: {fileID: 1178085476}
   - component: {fileID: 1178085475}
+  - component: {fileID: 1178085477}
   m_Layer: 0
   m_Name: fishSwim1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23570,6 +23571,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.66, y: 0.42}
   m_EdgeRadius: 0
+--- !u!70 &1178085477
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178085472}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000019073486, y: 0.18}
+  m_Size: {x: 0.6, y: 0.06}
+  m_Direction: 1
 --- !u!1 &1178178640
 GameObject:
   m_ObjectHideFlags: 0
@@ -24689,9 +24706,10 @@ GameObject:
   - component: {fileID: 1207505747}
   - component: {fileID: 1207505750}
   - component: {fileID: 1207505749}
+  - component: {fileID: 1207505751}
   m_Layer: 0
   m_Name: fishSwim1 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24799,6 +24817,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointB: {x: 18, y: -8.87, z: 20}
+--- !u!70 &1207505751
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207505746}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000019073486, y: 0.18}
+  m_Size: {x: 0.6, y: 0.06}
+  m_Direction: 1
 --- !u!1 &1210256607
 GameObject:
   m_ObjectHideFlags: 0
@@ -25371,7 +25405,7 @@ GameObject:
   - component: {fileID: 1234364878}
   m_Layer: 0
   m_Name: dirtCaveSpikeTop (1)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26264,9 +26298,10 @@ GameObject:
   - component: {fileID: 1294914264}
   - component: {fileID: 1294914263}
   - component: {fileID: 1294914266}
+  - component: {fileID: 1294914267}
   m_Layer: 0
   m_Name: snailWalk1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26408,6 +26443,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.54, y: 0.31}
   m_EdgeRadius: 0
+--- !u!70 &1294914267
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294914260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000019073486, y: 0.12}
+  m_Size: {x: 0.48, y: 0.06}
+  m_Direction: 1
 --- !u!1 &1295053086
 GameObject:
   m_ObjectHideFlags: 0
@@ -34793,7 +34844,7 @@ GameObject:
   - component: {fileID: 1773101977}
   m_Layer: 0
   m_Name: dirtCaveSpikeBottom
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37439,7 +37490,7 @@ GameObject:
   - component: {fileID: 1895220553}
   m_Layer: 0
   m_Name: spikes (6)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39789,7 +39840,7 @@ GameObject:
   - component: {fileID: 2003724309}
   m_Layer: 0
   m_Name: spikes (7)
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40764,8 +40815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a86a2a67729f94badbb8955afa10d39a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 5.5
-  mvmtSpeed: 2
+  jumpHeight: 7
+  mvmtSpeed: 3
   walking: 1
   jumping: 1
   jumpingSprite: {fileID: 21300000, guid: d6f766bb8e24d40f68535889f5662354, type: 3}
